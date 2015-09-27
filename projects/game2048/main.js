@@ -104,6 +104,7 @@ function newgame(){
 	generateOneNumber();
 	generateOneNumber();
 	score=0;
+	$("#score").text(score);
 }
 function init(){
 	for (var i = 0;i<4;i++) {
