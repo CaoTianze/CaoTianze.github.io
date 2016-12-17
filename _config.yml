@@ -1,9 +1,9 @@
 # Site settings
 title: CaoTianze的博客
-email: xxxx@qq.com
+#email: xxxx@qq.com
 description: "Java工程师,H3C"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://caotianze.github.io" # the base hostname & protocol for your site
+url: "http://www.cnblogs.com/grass-cao/" # the base hostname & protocol for your site
 twitter_username: 
 github_username: CaoTianze  
 
