@@ -1,26 +1,16 @@
----
-layout: default
---- 
+<html>
 
-{% for post in site.posts %}
-<div id="{{ post.date | date: "%F-%H" }}" class="unit whole align-left post">
-	<article itemscope itemtype="http://schema.org/BlogPosting">
-		<h2>{{ post.title }}<br>
-		<small class="chip">{{ post.date | date: "%b %-d, %Y" }}</small>
-		<a class="chip" href="https://twitter.com/intent/tweet?text={{ post.title | cgi_escape }}&url={{ post.date | date: "%F-%H" | prepend: "#" | prepend: site.baseurl | prepend: site.url | cgi_escape }}"><i class="icon ion-social-twitter"></i> TWEET</a>
-		<a class="chip" href="{{ site.url }}{{ site.baseurl }}#{{ post.date | date: "%F-%H" }}"><i class="icon ion-android-share-alt"></i> LINK</a>
-		</h2>
-		
-		<div class="post-content">
-			{{ post.content }}
-		</div>
+<head>
+	<meta http-equiv="Content-Language" content="zh-CN">
+	<meta http-equiv="Content-Type" CONTENT="text/html; charset=utf-8">
+	<meta http-equiv="refresh" content="2;url=http://www.cnblogs.com/grass-cao/">
+	<title>自动跳转代码-我的博客园主页</title>
+</head>
 
-		{% if post.author %}
-		<span class="chip" itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<span itemprop="name">Article by {{ post.author }}</span>
-		</span>
-		{% endif %}
+<body>
+	本人的博客主页在博客园。<br/> 2秒后会自动跳转。
+	<br />您也可以手动点击<a href="http://www.cnblogs.com/grass-cao/">我的博客园主页</a>前往
+	<br />
+</body>
 
-	</article>
-</div>
-{% endfor %}
+</html>
